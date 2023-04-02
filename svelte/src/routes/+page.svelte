@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    /** @type{import('$lib/types.js').testType} */
+    let user = {
+        name: 'Evan',
+        age: 23
+    }
+</script>
+
+<p>Hello, I have developed this amazing website<br>My name is {user.name} and I am {user.age} years old.</p>
